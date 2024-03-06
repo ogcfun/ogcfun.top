@@ -1,0 +1,84 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>OGCFUN | 引导站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="mdui/css/mdui.min.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <link rel="stylesheet" href="assets/css/load.css">
+    <link rel="icon" href="https://www.ogcfun.top/files/LOGO/logo.png">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c8493223ca0fc5718b7da621552fdd73";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?850366a104db8ac5307390e3049e4918";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+<div id="loading">
+    <div class="ping"></div>
+</div>
+
+<div id="main">
+    <div id="rin-bg"></div>
+    <main id="rin-main">
+        <div id="rin-headimg"></div>
+        <div class="rin-name">O&nbsp;&nbsp;G&nbsp;&nbsp;C&nbsp;&nbsp;F&nbsp;&nbsp;U&nbsp;&nbsp;N</div>
+        <div class="rin-description" id="description">万丈红尘缤纷彩，天涯云水路遥长</div>
+        <div class="rin-tr"></div>
+       <div class="jump">
+        <a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="https://www.ogcfun.com/gallery" style="color:#FFD700;">前往图库</a>
+        <a class="mdui-btn mdui-btn-raised rin-btn mdui-text-capitalize" href="#" style="color:#FFD700;">前往博客</a>
+       </div>
+    </main>
+    <footer id="rin-footer">
+        <div>Copyright © 2024 ogcfun.top All Rights Reserved <a href="https://beian.miit.gov.cn">桂ICP备2023013705号</a></div>
+    </footer>
+</div>
+
+<script src="mdui/js/mdui.min.js"></script>
+</body>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+        const main = document.querySelector("#main");
+        main.style.display = "none"; // 首先隐藏 main 元素
+    });
+
+    window.onload = () => {
+        const loading = document.querySelector("#loading");
+        const main = document.querySelector("#main");
+        loading.style.display = "none"; // 隐藏 loading 元素
+        main.style.display = "block"; // 显示 main 元素
+    };
+
+    const description = document.getElementById('description');
+    const text = description.innerText;
+    description.innerHTML = ''; // 清空原有内容
+
+    let index = 0;
+
+    function printText() {
+        if (index < text.length) {
+            description.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(printText, 120); // 设置打印速度，100表示100毫秒打印一个字
+        }
+    }
+
+    printText();
+
+</script>
+</html>

@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background: #fafafa;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+::selection {
+    color: #e0e0e0;
+    background: rgba(255,64,129,.35);
+}
+#rin-bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-color: #818181;
+    background-image: url('https://www.ogcfun.top/files/LOGO/3g-indexBg1.png');
+}
+#rin-bg:after {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    position: fixed;
+    background-color: rgba(66,66,66,.6);
+}
+
+#rin-footer {
+    bottom: 0;
+    margin: auto;
+    width: 100vw;
+    position: absolute;
+    padding: 10px 0 10px 0;
+}
+#rin-footer div {
+    font-size: 14px;
+    text-align: center;
+    color: rgba(255,255,255,.79);
+}
+#rin-footer div a {
+    color: #2196f3;
+    font-weight: 700;
+    transition: all .3s;
+    text-decoration: none;
+}
+.rin-tr {
+    width: 80%;
+    height: 2px;
+    margin: auto;
+    background: rgba(255,255,255,.3);
+}
+
+.jump {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    #rin-bg{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        position: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 50% 50%;
+        background-color: #818181;
+        background-image: url('https://www.ogcfun.top/files/LOGO/mediaIndexBg.jpg');
+    }
+    #rin-footer div {
+        font-size: 10px;
+        text-align: center;
+        color: rgba(255,255,255,.79);
+    }
+    .jump {
+        width: 100%;
+        margin:0 auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #description{
+        color:white;
+        text-shadow: 0 0 8px rgba(255,255,255,.55);
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        letter-spacing:8px;
+    }
+}
