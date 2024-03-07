@@ -62,11 +62,12 @@ var _hmt = _hmt || [];
         const main = document.querySelector("#main");
         loading.style.display = "none"; // 隐藏 loading 元素
         main.style.display = "block"; // 显示 main 元素
+        // 打印文字
+        const description = document.getElementById('description');
+        const text = description.innerText;
+        description.innerHTML = ''; // 清空原有内容
+        printText();
     };
-
-    const description = document.getElementById('description');
-    const text = description.innerText;
-    description.innerHTML = ''; // 清空原有内容
 
     let index = 0;
 
@@ -74,11 +75,9 @@ var _hmt = _hmt || [];
         if (index < text.length) {
             description.innerHTML += text.charAt(index);
             index++;
-            setTimeout(printText, 120); // 设置打印速度，100表示100毫秒打印一个字
+            setTimeout(printText, 200); // 设置打印速度，100表示100毫秒打印一个字
         }
     }
-
-    printText();
 
 </script>
 </html>
