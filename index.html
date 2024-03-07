@@ -64,18 +64,18 @@ var _hmt = _hmt || [];
         main.style.display = "block"; // 显示 main 元素
         // 打印文字
         const description = document.getElementById('description');
-        const text = description.innerText;
-        description.innerHTML = ''; // 清空原有内容
         printText();
     };
 
     let index = 0;
+    const text = description.innerText;
+    description.innerHTML = ''; // 清空原有内容
 
     function printText() {
         if (index < text.length) {
             description.innerHTML += text.charAt(index);
             index++;
-            setTimeout(printText, 200); // 设置打印速度，100表示100毫秒打印一个字
+            setTimeout(printText, 120); // 设置打印速度，100表示100毫秒打印一个字
         }
     }
 
