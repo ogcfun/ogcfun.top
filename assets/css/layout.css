@@ -21,7 +21,7 @@ body {
     background-attachment: fixed;
     background-position: 50% 50%;
     background-color: #818181;
-    background-image: url('https://www.ogcfun.top/files/LOGO/3g-indexBg1.png');
+    background-image: url('https://oss.ogcfun.top/swiper/phone/3g-indexBg1.jpg?x-oss-process=image/format,webp');
 }
 #rin-bg:after {
     top: 0;
@@ -42,7 +42,7 @@ body {
     padding: 10px 0 10px 0;
 }
 #rin-footer div {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: rgba(255,255,255,.79);
 }
@@ -53,7 +53,7 @@ body {
     text-decoration: none;
 }
 .rin-tr {
-    width: 80%;
+    width: 72%;
     height: 2px;
     margin: auto;
     background: rgba(255,255,255,.3);
@@ -82,7 +82,7 @@ body {
         background-attachment: fixed;
         background-position: 50% 50%;
         background-color: #818181;
-        background-image: url('https://www.ogcfun.top/files/LOGO/mediaIndexBg.jpg');
+        background-image: url('https://oss.ogcfun.top/swiper/phone/mediaIndexBg1.jpg?x-oss-process=image/format,webp');
     }
     #rin-footer div {
         font-size: 10px;
